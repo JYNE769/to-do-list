@@ -33,61 +33,30 @@
                SÉANCE 1 : afficher ici une liste de tâches EN DUR
                  (composant "list" avec des cases à cocher). -->
                     <div class="list">
-                        <ul>
-                            <li class="item-content">
-                                <div class="item-media">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <i class="icon-checkbox"></i>
-                                    </label>
-                                </div>
-                                <div class="item-inner">
-                                    <div class="item-title">Faire la session 1</div>
-                                </div>
-                            </li>
+                        <ul class="liste-taches">
 
-                            <li class="item-content">
-                                <div class="item-media">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <i class="icon-checkbox"></i>
-                                    </label>
-                                </div>
-                                <div class="item-inner">
-                                    <div class="item-title">Faire la session 2</div>
-                                </div>
-                            </li>
-
-                            <li class="item-content">
-                                <div class="item-media">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <i class="icon-checkbox"></i>
-                                    </label>
-                                </div>
-                                <div class="item-inner">
-                                    <div class="item-title">Faire la session 3</div>
-                                </div>
-                            </li>
-
-                            <li class="item-content">
-                                <div class="item-media">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <i class="icon-checkbox"></i>
-                                    </label>
-                                </div>
-                                <div class="item-inner">
-                                    <div class="item-title">Terminer le tp</div>
-                                </div>
-                            </li>
                         </ul>
                     </div>
                     <!-- SÉANCE 2 : ajouter un champ + un bouton, puis
                  générer la liste à partir d'un tableau JS
-                 (voir js/app.js). Ajouter / supprimer une tâche.
+                 (voir js/app.js). Ajouter / supprimer une tâche.-->
 
-               SÉANCE 3 : cocher/décocher, compteur, filtres,
+                    <div class="list inset">
+                        <ul>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-input-wrap">
+                                        <input type="text" id="champ-tache" placeholder="Nouvelle tâche…">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <a href="#" class="button button-fill" id="btn-ajouter">Ajouter</a>
+                    </div>
+
+                    <!--SÉANCE 3 : cocher/décocher, compteur, filtres,
                  puis sauvegarde avec localStorage.
                ===================================================== -->
                     <div class="block">
