@@ -42,10 +42,33 @@
             </a>
         </div>
 
+        <div class="block">
+            <div class="segmented">
+
+                <button class="button filtre-btn button-active"
+                 data-filtre = "toutes">
+                 Toutes
+                </button>
+
+                <button class="button filtre-btn"
+                 data-filtre = "afaire">
+                 A faire
+                </button>
+
+                <button class="button filtre-btn"
+                 data-filtre = "faites">
+                 Faite
+                </button>
+            </div>
+        </div>
+
         <!-- Liste des taches, remplie a partir du tableau tache dans le JS  -->
         <div class="list">
             <ul class="liste-taches"></ul>
         </div>
+
+        <div class="block-title compteur"> 5 taches restantes</div>
+        <div class="block"></div>
 
         <!-- =====================================================
         SÉANCE 3 : cocher/décocher, compteur, filtres,

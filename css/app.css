@@ -4,10 +4,8 @@
 
 /* Couleur principale du thème (teal) */
 :root {
-    --f7-theme-color: #0d9488;
-    --f7-theme-color-rgb: 13, 148, 136;
-    --f7-theme-color-shade: #0b7f75;
-    --f7-theme-color-tint: #14a89b;
+    --f7-theme-color: #0000FF;
+    --f7-theme-color-rgb: 31, 143, 255;
 
     /* Navbar (et autres barres) aux couleurs du thème */
     --f7-bars-bg-color: var(--f7-theme-color);
@@ -52,7 +50,7 @@
     font-weight: 600;
 }
 .tabbar .tab-link-active {
-    border-top: 2px solid rgb(0, 109, 109);
+    border-top: 4px solid #15ff00;
 }
 
 /* Bouton supprimer — hover teal foncé */
@@ -66,3 +64,4 @@
 }
 
 /* SÉANCE 3 : ajouter ici le style de la tâche cochée (texte barré) */
+.tache-faite { text-decoration: line-through; color: #8e8e93; } 
