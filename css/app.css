@@ -2,16 +2,67 @@
    Ma ToDo — styles de l'application
    ============================================================ */
 
-/* Couleur principale du thème (orange) */
+/* Couleur principale du thème (teal) */
 :root {
-    --f7-theme-color: #0000FF;
-    --f7-theme-color-rgb: 31, 143, 255;
-    --f7-theme-color-shade: #cf5009;
-    --f7-theme-color-tint: #f06a1e;
+    --f7-theme-color: #0d9488;
+    --f7-theme-color-rgb: 13, 148, 136;
+    --f7-theme-color-shade: #0b7f75;
+    --f7-theme-color-tint: #14a89b;
+
+    /* Navbar (et autres barres) aux couleurs du thème */
+    --f7-bars-bg-color: var(--f7-theme-color);
+    --f7-bars-bg-color-rgb: var(--f7-theme-color-rgb);
+    --f7-bars-text-color: #fff;
+    --f7-bars-link-color: #fff;
+
+    /* Variables spécifiques à la navbar (sinon le thème iOS/MD écrase) */
+    --f7-navbar-text-color: #fff;
+    --f7-navbar-link-color: #fff;
+    --f7-navbar-large-title-text-color: #fff;
+    --f7-navbar-subtitle-text-color: rgba(255, 255, 255, 0.85);
+
+    /* Checkbox : bordure teal même quand décochée */
+    --f7-checkbox-inactive-color: var(--f7-theme-color);
 }
 
 .page-content {
     padding-bottom: 16px;
+}
+
+/* Réduit l'espace entre le champ de saisie et le bouton */
+.page-content > .list:first-child {
+    margin-bottom: 10px;
+}
+
+.page-content > .list:first-child + .block {
+    margin-top: 4px;
+}
+
+/* Titre de la navbar en gras */
+.navbar .title.title-bold {
+    font-weight: 700;
+}
+
+/* Tabbar labels : blanc, gras uniquement pour l'onglet actif */
+.tabbar .tabbar-label {
+    color: #fff;
+    font-weight: 200;
+}
+.tabbar .tab-link-active .tabbar-label {
+    font-weight: 600;
+}
+.tabbar .tab-link-active {
+    border-top: 2px solid rgb(0, 109, 109);
+}
+
+/* Bouton supprimer — hover teal foncé */
+.btn-suppr {
+    color: #fc1758;
+    transition: color 0.2s;
+}
+
+.btn-suppr:hover {
+    color: #a70f3a;
 }
 
 /* SÉANCE 3 : ajouter ici le style de la tâche cochée (texte barré) */
