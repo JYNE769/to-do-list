@@ -13,7 +13,6 @@ function sauvegarder() {
 }
 function chargerTaches() {
   var data = localStorage.getItem(CLE);
-  console.log(data)
   if (data) {return JSON.parse(data);}
 
   return [];
